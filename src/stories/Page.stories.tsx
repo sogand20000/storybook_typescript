@@ -3,13 +3,13 @@ import { ComponentStory, ComponentMeta } from '@storybook/react'
 import { within, userEvent } from '@storybook/testing-library'
 import { Page } from '../Component/page/Page'
 
-const withMaxWidth = (StoryFn) => {
+/* const withMaxWidth = (StoryFn) => {
   return (
     <div style={{ maxWidth: 500, margin: 'auto', border: '1px solid #fab' }}>
       <StoryFn />
     </div>
   )
-}
+} */
 export default {
   title: 'Component/Page',
   component: Page,
@@ -22,8 +22,8 @@ export default {
 const Template: ComponentStory<typeof Page> = (args) => <Page {...args} />
 
 export const LoggedOut = Template.bind({})
-LoggedOut.decorators = [withMaxWidth]
-
+/* LoggedOut.decorators = [withMaxWidth]
+ */
 export const LoggedIn = Template.bind({})
 
 // More on interaction testing: https://storybook.js.org/docs/react/writing-tests/interaction-testing
