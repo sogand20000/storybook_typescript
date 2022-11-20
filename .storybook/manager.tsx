@@ -3,4 +3,7 @@ import { themes } from '@storybook/theming'
 import customTheme from './customTheme'
 addons.setConfig({
   theme: customTheme,
+  sidebar: {
+    showRoots: false,
+  },
 })
