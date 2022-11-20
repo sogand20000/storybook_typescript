@@ -8,7 +8,8 @@ export default {
   title: 'Component/Atomic/Button',
   component: Button,
   args: {
-    label: 'Button',
+    label: 'Hello word',
+    birthDate: new Date(),
   },
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
@@ -23,6 +24,11 @@ export const Primary = Template.bind({})
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
   primary: true,
+}
+Primary.parameters = {
+  backgrounds: {
+    default: 'dark',
+  },
 }
 
 export const Secondary = Template.bind({})
